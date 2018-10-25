@@ -5,6 +5,13 @@
 //  Import the express library
 const express = require('express')
 var bodyParser = require('body-parser')
+var request = require('request');
+request('https://swapi.co/api/planets/1', function (error, response, body) {
+  if(!error && response.statusCode == 200) {
+    console.log(body)
+    var da = data
+  }
+})
 
 //  Create an instance of express
 const app = express()
